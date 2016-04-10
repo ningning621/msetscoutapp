@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ningning.msetscoutapp.Teleop">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="60dp"
+            android:id="@+id/finalLayout"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewLowBar"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Low Bar" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="E"
+                    android:id="@+id/eBut1" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="M"
+                    android:id="@+id/mBut1" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="H"
+                    android:id="@+id/hBut1" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="X"
+                    android:id="@+id/xFail1" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:id="@+id/xBut1"
+                    android:text="Back"
+                    android:layout_column="109" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    tools:targetApi="ice_cream_sandwich" />
+                <TextView
+                    android:layout_weight=".7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/ratingText1"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textSpinnerA"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="E"
+                    android:id="@+id/eBut2" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="M"
+                    android:id="@+id/mBut2" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="H"
+                    android:id="@+id/hBut2" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="X"
+                    android:id="@+id/xFail2" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Back"
+                    android:id="@+id/xBut2" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    tools:targetApi="ice_cream_sandwich" />
+                <TextView
+                    android:layout_weight=".7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/ratingText2"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textSpinnerB"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="E"
+                    android:id="@+id/eBut3" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="M"
+                    android:id="@+id/mBut3" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="H"
+                    android:id="@+id/hBut3" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="X"
+                    android:id="@+id/xFail3" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Back"
+                    android:id="@+id/xBut3" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    tools:targetApi="ice_cream_sandwich" />
+                <TextView
+                    android:layout_weight=".7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/ratingText3"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textSpinnerC"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="E"
+                    android:id="@+id/eBut4" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="M"
+                    android:id="@+id/mBut4" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="H"
+                    android:id="@+id/hBut4" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="X"
+                    android:id="@+id/xFail4" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Back"
+                    android:id="@+id/xBut4" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    tools:targetApi="ice_cream_sandwich" />
+                <TextView
+                    android:layout_weight=".7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/ratingText4"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textSpinnerD"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="E"
+                    android:id="@+id/eBut5" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:id="@+id/mBut5" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="H"
+                    android:id="@+id/hBut5" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="X"
+                    android:id="@+id/xFail5" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Back"
+                    android:id="@+id/xBut5" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    tools:targetApi="ice_cream_sandwich" />
+                <TextView
+                    android:layout_weight=".7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/ratingText5"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+        </TableLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/finalLayout"
+            android:id="@+id/highGoalTextRow"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High Goals"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:id="@+id/highGoalText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/highGoalView2"
+                android:layout_marginLeft="20dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/highGoalTextRow"
+            android:id="@+id/highButtonTableRow">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight=".11"
+                android:layout_height="wrap_content"
+                tools:targetApi="ice_cream_sandwich" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.26"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:padding="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/highGoalHitButton" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.26"
+                android:layout_height="wrap_content"
+                android:text="O"
+                android:padding="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/highGoalMissButton" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.26"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:padding="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/highGoalDeleteButton" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight=".11"
+                android:layout_height="wrap_content"
+                tools:targetApi="ice_cream_sandwich" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="51dp"
+            android:id="@+id/lowGoalTextRow"
+            android:layout_below="@+id/highButtonTableRow"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Low Goals"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:id="@+id/lowTextView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/lowGoalView2"
+                android:layout_marginLeft="20dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:layout_below="@+id/lowGoalTextRow"
+            android:id="@+id/lowButtonTableRow">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight=".11"
+                android:layout_height="wrap_content"
+                tools:targetApi="ice_cream_sandwich" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.26"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:padding="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/lowGoalHitButton" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.26"
+                android:layout_height="wrap_content"
+                android:text="O"
+                android:padding="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/lowGoalMissButton" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.26"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:padding="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/lowGoalDeleteButton" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight=".11"
+                android:layout_height="wrap_content"
+                tools:targetApi="ice_cream_sandwich" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/defenseRow"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/lowButtonTableRow">
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_weight=".4"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="#0096bb"
+                android:textOff="Offense"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textOn="Defense"
+                android:id="@+id/defenseToggle"
+                android:layout_marginRight="20dp"
+                android:checked="false" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:layout_height="wrap_content"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Blocked"
+                android:id="@+id/blockedButton" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:layout_height="wrap_content"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Not Blocked"
+                android:id="@+id/notBlockedButton" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:layout_height="wrap_content"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Back"
+                android:id="@+id/blockedDeleteButton" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight=".6"
+                android:layout_height="wrap_content"
+                android:id="@+id/space2"
+                tools:targetApi="ice_cream_sandwich" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/defenseRow"
+            android:id="@+id/shotsRow">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight=".4"
+                android:layout_height="wrap_content"
+                tools:targetApi="ice_cream_sandwich" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".6"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:id="@+id/shotsBlockedTextView" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hangRow"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/shotsRow">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight=".1"
+                android:layout_height="wrap_content"
+                tools:targetApi="ice_cream_sandwich" />
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_weight=".233"
+                android:layout_height="wrap_content"
+                android:text="New ToggleButton"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:buttonTint="#0096bb"
+                android:textOff="Hang"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textOn="Hang"
+                android:id="@+id/hangToggle" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight=".05"
+                android:layout_height="wrap_content"
+                tools:targetApi="ice_cream_sandwich" />
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_weight=".233"
+                android:layout_height="wrap_content"
+                android:text="New ToggleButton"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:textOff="Challenge"
+                android:buttonTint="#0096bb"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textOn="Challenge"
+                android:id="@+id/challengeToggle" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight=".05"
+                android:layout_height="wrap_content"
+                tools:targetApi="ice_cream_sandwich" />
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_weight=".233"
+                android:layout_height="wrap_content"
+                android:text="New ToggleButton"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:buttonTint="#0096bb"
+                android:textOff="None"
+                android:textOn="None"
+                android:id="@+id/noneToggle" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight=".1"
+                android:layout_height="wrap_content"
+                tools:targetApi="ice_cream_sandwich" />
+        </TableRow>
+
+    </RelativeLayout>
+</ScrollView>
+

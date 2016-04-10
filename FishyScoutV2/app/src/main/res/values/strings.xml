@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">MSETScoutApp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_input">Input</string>
+    <string-array name="defense_array">
+        <item>Low Bar</item>
+        <item>Cheval de Frise</item>
+        <item>Drawbridge</item>
+        <item>Ramparts</item>
+        <item>Rock Wall</item>
+        <item>Portcullis</item>
+        <item>Moat</item>
+        <item>Sally Port</item>
+        <item>Rough Terrain</item>
+    </string-array>
+
+    <string-array name="category_a">
+        <item>Portcullis</item>
+        <item>Cheval de Frise</item>
+    </string-array>
+
+    <string-array name="category_b">
+        <item>Moat</item>
+        <item>Ramparts</item>
+    </string-array>
+
+    <string-array name="category_c">
+        <item>Drawbridge</item>
+        <item>Sally Port</item>
+    </string-array>
+
+    <string-array name="category_d">
+        <item>Rock Wall</item>
+        <item>Rough Terrain</item>
+    </string-array>
+    <string name="title_activity_autonomous">Autonomous</string>
+    <string name="title_activity_teleop">Teleop</string>
+    <string name="title_activity_post_match">PostMatch</string>
+    <string name="title_activity_confirmation">Confirmation</string>
+</resources>
